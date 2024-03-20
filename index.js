@@ -17,7 +17,7 @@ app.engine('html', require('ejs').renderFile);
 
 // Definindo rotas
 app.get("/", (req, res) => {
-  res.send("Bem vindo ao cadastro de fornecedores. Clique aqui para cadastrar um novo fornecedor: <a href='/cadfornecedor'>Cadastrar</a>");
+  res.send("<h1>Bem vindo ao cadastro de fornecedores.</h1><br> <h3>Clique aqui para cadastrar um novo fornecedor: <a href='/cadfornecedor'>Cadastrar</a></h3>");
 });
 app.get("/cadfornecedor", function(req, res) {
   res.render('formFornecedor');
